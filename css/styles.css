@@ -1,244 +1,222 @@
-
-*{
-    box-sizing: border-box;    
+* {
+  box-sizing: border-box;
 }
 
-:root{
-    --color-fondo: #282828;
-    --color-titulos: #acbcc9;
-    --texto-contacto: #fff;
-    --barra-baja: 3px solid black;
+:root {
+  --color-fondo: #282828;
+  --color-titulos: #acbcc9;
+  --texto-contacto: #fff;
+  --barra-baja: 3px solid black;
 }
 
-body{
-    background-color: var(--color-fondo);
+body {
+  background-color: var(--color-fondo);
 }
 
-.barra-baja{
-    border-bottom: var(--barra-baja);
-    width: 100px;
-    border-color: var(--color-titulos);
+.barra-baja {
+  border-bottom: var(--barra-baja);
+  width: 100px;
+  border-color: var(--color-titulos);
 }
 
-.texto-contacto{
-    color: var(--texto-contacto);
+.texto-contacto {
+  color: var(--texto-contacto);
 }
 
-.cont-curriculum{
-    width: 70%;
-    margin: 0 auto;
+.cont-curriculum {
+  width: 70%;
+  margin: 0 auto;
 
-    display: flex;
+  display: flex;
 }
-    /*ESTILOS PARTE IZQUIERDA*/
-    /* ESTILOS SECCIÓN CONTACTO */
-    .info-contacto{
-        width: 34%;
-        background-color: #2a3a47;
-        padding-top: 30px;
-    }
-        .bloque-contacto{
-            padding-left: 27px;
-        }
-        .info-contacto img{
-            width: 50%;
-            display: block;
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 40px;
-            clip-path: circle(50% at 50% 50%);
-            -webkit-clip-path: circle(50% at 50% 50%);
-        }
-        .info-contacto .contacto .contacto-titulo{
-            
-            color: var(--color-titulos);
-            font-size: 25px;
-        }
-        .info-contacto .contacto .contacto-titulo .p-contacto{
-            margin-bottom: 10px;
-        }
-        /*ESTILOS TELEFONO*/
-        .info-contacto .contacto .telefono{
-            margin-top: 10px;
-            margin-left: 6px;
 
-            display: flex;
-            align-items: center;
-        }
-            .info-contacto .contacto .telefono .icono-telefono{
-                font-size: 30px;
-                margin-right: 21px;
-            }
+/*ESTILOS PARTE IZQUIERDA*/
+/* ESTILOS SECCIÓN CONTACTO */
+.info-contacto {
+  width: 34%;
+  background-color: #2a3a47;
+  padding-top: 30px;
+}
+.bloque-contacto {
+  padding-left: 27px;
+}
+.info-contacto img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+}
+.info-contacto .contacto .contacto-titulo {
+  color: var(--color-titulos);
+  font-size: 25px;
+}
+.info-contacto .contacto .contacto-titulo .p-contacto {
+  margin-bottom: 10px;
+}
 
-        /*ESTILOS DE LA UBICACIÓN*/
-        .info-contacto .contacto .ubicacion{
-            margin-left: 4px;
+/*ESTILOS TELEFONO*/
+.info-contacto .contacto .telefono {
+  margin-top: 10px;
+  margin-left: 6px;
 
-            display: flex;
-            align-items: center;
-        }
-            .info-contacto .contacto .ubicacion .icono-ubicacion{
-                font-size: 30px;
-                margin-right: 18px;
-            }
+  display: flex;
+  align-items: center;
+}
+.info-contacto .contacto .telefono .icono-telefono {
+  font-size: 28px;
+  margin-right: 21px;
+}
 
-        /*ESTILOS DEL CORREO ELECTRÓNICO*/
-        .info-contacto .contacto .correo{
+/*ESTILOS DE LA UBICACIÓN*/
+.info-contacto .contacto .ubicacion {
+  margin-left: 4px;
 
-            display: flex;
-            align-items: center;
-        }
-            .info-contacto .contacto .correo .icono-correo{
-                font-size: 30px;
-                margin-right: 13px;
-            }
+  display: flex;
+  align-items: center;
+}
+.info-contacto .contacto .ubicacion .icono-ubicacion {
+  font-size: 28px;
+  margin-right: 18px;
+}
 
-        /*ESTILOS REDES SOCIALES*/
-        .info-contacto .social .p-social{
-            text-transform: uppercase;
-            color: var(--color-titulos);
-            font-size: 25px;
-            margin-bottom: 10px;
-        }
-        .info-contacto .social .linkedin{
-            margin-top: 20px;
+/*ESTILOS DEL CORREO ELECTRÓNICO*/
+.info-contacto .contacto .correo {
+  display: flex;
+  align-items: center;
+}
+.info-contacto .contacto .correo .icono-correo {
+  font-size: 28px;
+  margin-right: 13px;
+}
 
-            display: flex;
-            align-items: center;
-        }
-            .info-contacto .social .linkedin .icono-linkedin{
-                font-size: 30px;
-                margin-right: 13px;
-            }
-        .info-contacto .social .linkedin a{
-            display: block;
-            color: #fff;
-            text-decoration: none;
-        }
+/*ESTILOS REDES SOCIALES*/
+.info-contacto .social .p-social {
+  text-transform: uppercase;
+  color: var(--color-titulos);
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.info-contacto .social .linkedin {
+  margin-top: 20px;
 
-        /*ESTILOS HABILIDADES*/
-        .info-contacto .habilidades{
-            margin-top: 30px;
-        }
-            .info-contacto .habilidades .habi-titulo{
-                text-transform: uppercase;
-                font-size: 25px;
-                color: var(--color-titulos);
-                margin-bottom: 10px;
-            }
-            .info-contacto .habilidades .habi-cont{
-                display: flex;
-            }
-                .info-contacto .habilidades .habi-cont .habi-levels{
-                    margin-top: 20px;
-                    margin-left: 65px;
-                }
-                    .info-contacto .habilidades .habi-cont .habi-levels .level{
-                        width: 14px;
-                        height: 14px;
-                        margin-bottom: 19px;
-                        border-radius: 50%;
-                    }
+  display: flex;
+  align-items: center;
+}
+.info-contacto .social .linkedin .icono-linkedin {
+  font-size: 28px;
+  margin-right: 13px;
+}
+.info-contacto .social .linkedin a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
 
-                    .info-contacto .habilidades .habi-cont .habi-levels .level-1{
-                        background-color: #c4c4c5;
-                        box-shadow: 23px 0px #c4c4c5,
-                                    46px 0px #c4c4c5,
-                                    69px 0px #c4c4c5,
-                                    92px 0px #475965;
-                    }
-                    .info-contacto .habilidades .habi-cont .habi-levels .level-2{
-                        background-color: #c4c4c5;
-                        box-shadow: 23px 0px #c4c4c5,
-                                    46px 0px #c4c4c5,
-                                    69px 0px #c4c4c5,
-                                    92px 0px #475965;
-                    }
-                    .info-contacto .habilidades .habi-cont .habi-levels .level-3{
-                        background-color: #c4c4c5;
-                        box-shadow: 23px 0px #c4c4c5,
-                                    46px 0px #c4c4c5,
-                                    69px 0px #475965,
-                                    92px 0px #475965;
-                    }
-                    .info-contacto .habilidades .habi-cont .habi-levels .level-4{
-                        background-color: #c4c4c5;
-                        box-shadow: 23px 0px #c4c4c5,
-                                    46px 0px #c4c4c5,
-                                    69px 0px #475965,
-                                    92px 0px #475965;
-                    }
-                    .info-contacto .habilidades .habi-cont .habi-levels .level-5{
-                        background-color: #c4c4c5;
-                        box-shadow: 23px 0px #c4c4c5,
-                                    46px 0px #c4c4c5,
-                                    69px 0px #c4c4c5,
-                                    92px 0px #475965;
-                    }
-    /*ESTILOS PARTE DERECHA*/
-    .barrita{
-        border-bottom: 3px solid #78baf0;
-        width: 100px;
-    }
-    
-    .info-profesional{
-        background-color: #f8f9fd;
-        width: 59%;
-        padding-left: 27px;
-        padding-top: 30px;
-    }
-        .info-profesional h1{
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-        /*ESTILOS DESCRIPCION*/
-        .info-profesional .descripcion{
-            margin-bottom: 50px;
-        }
-            .info-profesional .descripcion h2{
-                color: #4f575f;
-            }
-            .info-profesional .descripcion p{
-                color: #abacb0;
-            }
-        /*ESTILOS EXPERIENCIA*/
-        .info-profesional .experiencia h2{
-            margin-bottom: 10px;            
-        }
-        .info-profesional .experiencia p{
-            color: #4d5961;
-            font-weight: bold;
-        }
-        .info-profesional .experiencia .desc-experiencia p{
-            color: #abacb0;
-            font-weight: normal;
-            margin: 5px;
-        }
-        /*ESTILOS EDUCACIÓN*/
-        .info-profesional .educacion{
-            margin-top: 40px;
-        }
-            .info-profesional .educacion h2{
-                text-transform: uppercase;
-                margin-bottom: 10px;
-            }
-            .info-profesional .educacion .uni{
-                text-transform: uppercase;
-                font-weight: bold;
-                color: #4d5961;
-            }
-        /*ESTILOS CURSOS*/
-        .info-profesional .cursos{
-            margin-top: 40px;
-        }
-            .info-profesional .cursos h2{
-                margin-bottom: 10px;
-                text-transform: uppercase;
-            }
-            .info-profesional .cursos .curso-titulo{
-                color: #4f575f;
-                font-weight: bold;
-            }
-            .info-profesional .cursos .curso-desc{
-                color: #abacb0;
-            }
+/*ESTILOS HABILIDADES*/
+.info-contacto .habilidades {
+  margin-top: 30px;
+}
+.info-contacto .habilidades .habi-titulo {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: var(--color-titulos);
+  margin-bottom: 10px;
+}
+.info-contacto .habilidades .habi-cont {
+  display: flex;
+}
+.info-contacto .habilidades .habi-cont .habi-levels {
+  margin-top: 20px;
+  margin-left: 65px;
+}
+.info-contacto .habilidades .habi-cont .habi-levels .level {
+  width: 14px;
+  height: 14px;
+  margin-bottom: 19px;
+  border-radius: 50%;
+}
+
+.info-contacto .habilidades .habi-cont .habi-levels .level-1 {
+  background-color: #c4c4c5;
+  box-shadow: 23px 0px #c4c4c5, 46px 0px #c4c4c5, 69px 0px #475965,
+    92px 0px #475965;
+}
+.info-contacto .habilidades .habi-cont .habi-levels .level-2 {
+  background-color: #c4c4c5;
+  box-shadow: 23px 0px #c4c4c5, 46px 0px #475965, 69px 0px #475965,
+    92px 0px #475965;
+}
+.info-contacto .habilidades .habi-cont .habi-levels .level-3 {
+  background-color: #c4c4c5;
+  box-shadow: 23px 0px #c4c4c5, 46px 0px #c4c4c5, 69px 0px #475965,
+    92px 0px #475965;
+}
+.info-contacto .habilidades .habi-cont .habi-levels .level-4 {
+  background-color: #c4c4c5;
+  box-shadow: 23px 0px #c4c4c5, 46px 0px #c4c4c5, 69px 0px #475965,
+    92px 0px #475965;
+}
+.info-contacto .habilidades .habi-cont .habi-levels .level-5 {
+  background-color: #c4c4c5;
+  box-shadow: 23px 0px #c4c4c5, 46px 0px #c4c4c5, 69px 0px #c4c4c5,
+    92px 0px #475965;
+}
+
+/*ESTILOS PARTE DERECHA*/
+.barrita {
+  border-bottom: 3px solid #78baf0;
+  width: 100px;
+}
+
+.info-profesional {
+  background-color: #f8f9fd;
+  width: 59%;
+  padding-left: 27px;
+  padding-top: 30px;
+}
+.info-profesional h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/*ESTILOS DESCRIPCION*/
+.info-profesional .descripcion {
+  margin-bottom: 25px;
+}
+.info-profesional .descripcion h2 {
+  color: #4f575f;
+}
+.info-profesional .descripcion p {
+  color: #abacb0;
+}
+
+/*ESTILOS EXPERIENCIA*/
+.info-profesional .experiencia h2 {
+  margin-bottom: 10px;
+}
+.info-profesional .experiencia p {
+  color: #4d5961;
+  font-weight: bold;
+}
+.info-profesional .experiencia .desc-experiencia p {
+  color: #abacb0;
+  font-weight: normal;
+  margin: 5px;
+}
+
+/*ESTILOS EDUCACIÓN*/
+.info-profesional .educacion {
+  margin-top: 40px;
+}
+.info-profesional .educacion h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.info-profesional .educacion .uni {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4d5961;
+}
